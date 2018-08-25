@@ -3439,7 +3439,7 @@ void validate_calibrate_valid(char *datacfg, char *cfgfile, char *weightfile, in
     image *val_resized = calloc(nthreads, sizeof(image));
     image *buf = calloc(nthreads, sizeof(image));
     image *buf_resized = calloc(nthreads, sizeof(image));
-    pthread_t *thr = calloc(nthreads, sizeof(pthread_t));
+    pthread_t *thr = calloc(nthreads, sizeof(pthread_t)); // Error Happen
 
     load_args args = { 0 };
     args.w = net.w;
